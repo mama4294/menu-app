@@ -17,7 +17,7 @@ function App() {
 class Header extends React.Component {
   render() {
     return (
-      <div className="text-purple-800 pb-5 ">
+      <div className="text-purple-800 pb-5">
         <h1 className="text-3xl font-bold">Drink Menu</h1>
         <p>1650 Wewatta St. Unit 726</p>
       </div>
