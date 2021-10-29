@@ -1,0 +1,56 @@
+[
+    {
+        "type": "cocktail",
+        "name": "French Gimlet",
+        "description": "New Amsterdamn Gin, Elderflower Liqueur, Lime"
+    },
+    {
+        "type": "cocktail",
+        "name": "Apple Cider Mule",
+        "description": "New Amsterdamn Vodka, Ginger Beer, Apple Cider, Cinnemon"
+    },
+    {
+        "type": "cocktail",
+        "name": "Manhattan",
+        "description": "Makers 46 Bourbon, Vermouth, Angostura bitters"
+    },
+    {
+        "type": "beer",
+        "name": "Summer Shandy Homebrew"
+    },
+    {
+        "type": "beer",
+        "name": "Sipping Tropical Sour"
+    },
+    {
+        "type": "beer",
+        "name": "June Shine Hard Kombucha"
+    },
+    {
+        "type": "beer",
+        "name": "White Claw"
+    },
+    {
+        "type": "beer",
+        "name": "Coors Light"
+    },
+    {
+        "type": "non-alcoholic",
+        "name": "La Croix Sparkling Water"
+    },
+    {
+        "type": "app",
+        "name": "Dumplings",
+        "description": "Pork, Cabbage, Garlic, Dipping Sauce"
+    },
+    {
+        "type": "main",
+        "name": "Gourmet Breakfast Sandwhich",
+        "description": "Homemade Buns, Spicy Mayoli, Fried Eggs, Basil"
+    },
+    {
+        "type": "dessert",
+        "name": "Smores",
+        "description": "Marshmello, Dark Chocolate, Gram, Raspberry"
+    }
+]
