@@ -7,20 +7,21 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <div className="border-2 p-2 md:p-8 m-4 bg-white shadow-md w-auto">
-          <Header />
-          <Buttons
-            menuSelection={menuSelection}
-            onMenuSelChange={(myMenuSel) => setMenuSelection(myMenuSel)}
-          />
-          {menuSelection === "drinks" && (
-            <MenuItemComponent selection={"drinks"} />
-          )}
-          {menuSelection === "dinner" && (
-            <MenuItemComponent selection={"dinner"} />
-          )}
-        </div>
+      <Buttons
+        menuSelection={menuSelection}
+        onMenuSelChange={(myMenuSel) => setMenuSelection(myMenuSel)}
+      />
+      <div className="p-6 md:p-8 my-4 w-auto transition-all transform bg-white shadow-xl rounded-2xl max-w-xl mx-4 sm:mx-auto">
+        <Header />
+      </div>
+
+      <div className="p-6 md:p-8 my-4 w-auto transition-all transform bg-white shadow-xl rounded-2xl max-w-xl mx-4 sm:mx-auto">
+        {menuSelection === "drinks" && (
+          <MenuItemComponent selection={"drinks"} />
+        )}
+        {menuSelection === "dinner" && (
+          <MenuItemComponent selection={"dinner"} />
+        )}
       </div>
     </div>
   );
@@ -29,8 +30,8 @@ function App() {
 class Header extends React.Component {
   render() {
     return (
-      <div className="text-gray-800">
-        <h1 className="text-3xl font-bold border-b-4 border-gray-800 ">
+      <div className="text-gray-500">
+        <h1 className="text-2xl font-bold border-b-4 border-gray-500 ">
           Dinner at the Platform
         </h1>
         <p>1650 Wewatta St. Unit 726</p>
@@ -44,20 +45,20 @@ const Buttons = ({ menuSelection, onMenuSelChange }) => {
     <div className="my-2">
       <button
         onClick={() => onMenuSelChange("dinner")}
-        className={`p-2 m-2 rounded ${
+        className={`px-3 py-2 mx-1 font-medium rounded text-white bg-black ${
           menuSelection === "dinner"
-            ? "bg-gray-600 text-gray-100"
-            : "bg-transparent text-gray-700 border border-gray-500 hover:bg-gray-800 hover:text-gray-100"
+            ? " bg-opacity-20"
+            : "hover:bg-opacity-5 bg-opacity-0"
         }`}
       >
         Dinner
       </button>
       <button
         onClick={() => onMenuSelChange("drinks")}
-        className={` p-2 m-2 rounded ${
+        className={`px-3 py-2 mx-1 font-medium rounded text-white bg-black ${
           menuSelection === "drinks"
-            ? "bg-gray-600 text-gray-100"
-            : "bg-transparent text-gray-700 border border-gray-500 hover:bg-gray-800 hover:text-gray-100"
+            ? " bg-opacity-20"
+            : "hover:bg-opacity-5 bg-opacity-0"
         }`}
       >
         Drinks

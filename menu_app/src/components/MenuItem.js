@@ -39,9 +39,9 @@ class ItemNames extends React.Component {
         <SubHeader text={this.props.header} />
         <ul className="text-left pl-5">
           {this.filteredList.map((menuItem, i) => (
-            <li className="pb-2 font-bold" key={i}>
+            <li className="pb-2 font-medium text-gray-700" key={i}>
               {menuItem.name}
-              <p className="text-gray-500 font-normal">
+              <p className="text-gray-500 font-normal text-sm">
                 {" "}
                 {menuItem.description}
               </p>
@@ -56,7 +56,7 @@ class ItemNames extends React.Component {
 class SubHeader extends React.Component {
   render() {
     return (
-      <h3 className="text-l border-b-2 text-left uppercase font-bold my-3">
+      <h3 className="text-lg font-medium border-b-2 text-left text-gray-900 my-3">
         {this.props.text}
       </h3>
     );
